@@ -1,0 +1,17 @@
+graph {
+
+
+node [label=router shape=circle]
+r1 r2 r3
+
+node [label=serv]
+s11 s12
+s21 s22
+s31 s32
+
+r1 -- r2 -- r3 -- r1
+r1 -- {s11 s12}
+r2 -- {s21 s22}
+r3 -- {s31 s32}
+
+}

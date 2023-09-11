@@ -1,0 +1,51 @@
+# Next
+
+- daemonize router
+- change router process name to "labc-router"
+- auto-start router
+- server counting and auto-termination for routers
+- timer based router termination
+- topic subscription from cli
+- distributed logging via `log`-topic
+- resolution of realms
+
+
+# Versions
+
+## Version 0.1
+
+### basic rpc and message passing
+- implement message passing (encode decode as json-dict) ✓
+- include message type handling: (req, rep, pub, err) ✓
+- server class ✓
+- call functions with explicit location ✓
+- subscribe to topics ✓
+- publish to topics explicit location ✓
+
+### routing
+- finding other routers on the network ✓
+    - exchange of existance notifications and requests ✓
+    - define function-server and router roles ✓
+- implement remotes exchange protocol ✓
+ - remote host tracking ✓
+ - routing table ✓
+- implement call forwarding / routing ✓
+
+### services
+- introduce services ✓
+- core service for basic information of server ✓
+- high level call function without local server ✓
+- remote service to store information of known servers  ✓
+- automatic port choosing  ✓
+- look for services in ~/.config/labc/services and in ./services ✓
+
+### setup / cli
+- introduce propper cli / with click or argparse 
+- create setup.py ✓
+- configuration: ip range ✓
+- comment default parameters in init user configuration ✓
+- add toml configuration ✓
+
+### v0.x testing / documentation
+ - add distributed testing capabilities
+ - lifelines or beacons

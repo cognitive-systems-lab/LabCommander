@@ -1,0 +1,19 @@
+graph {
+
+node [shape=circle]
+net
+
+node [label=host]
+h1 h2 h3 
+
+node [label=serv]
+s11 s12
+s21 s22
+s31 s32
+
+net -- {h1 h2 h3}
+h1 -- {s11 s12}
+h2 -- {s21 s22}
+h3 -- {s31 s32}
+
+}

@@ -1,0 +1,17 @@
+
+[general]
+loglevel = "info"
+realm = ""
+
+[services]
+paths = ["./services"]
+# autostart = ["Core", "Test"]
+
+[router]
+host = "0.0.0.0"
+port = 55555
+known_peers = []
+discover_from_subnets = true
+discover_from_hostsfile = false
+discover_from_tailscale = true 
+loglevel = "debug"

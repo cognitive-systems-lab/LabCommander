@@ -1,0 +1,30 @@
+digraph {
+
+node [shape=box]
+
+server [label="Server"]
+client [label="Client"]
+regs [label="Registrations"]
+subs [label="Subscriptionts"]
+services[label="Services"]
+sreg [label="ServiceClass-\nRegistry"]
+servers [label="Local-\nServers"]
+rtab [label="Routing-\nTable"]
+router [label="Router"]
+remotes [label="Remotes"]
+
+server -> subs
+server -> regs
+server -> services
+
+client -> router
+server -> sreg
+
+router -> servers
+router -> rtab
+router -> remotes
+
+//API -> regs
+//API -> subs
+
+}
