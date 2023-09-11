@@ -1,0 +1,5 @@
+*.egg-info
+*.swp
+*\~
+/var
+__pycache__
